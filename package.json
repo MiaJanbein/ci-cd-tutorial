@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "build": "mkdirp dist && cpy src/* dist/",
+    "build": "cpy \"src/*.js\" dist/",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
